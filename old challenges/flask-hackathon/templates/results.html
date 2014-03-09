@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.js"></script>
+<script>
+
+$(document).ready(function()
+{
+  $('.table > tr').click(function() {
+    // row was clicked
+  });
+
+  $('#button').popover(
+  {
+     trigger: 'hover',
+     html: true,
+     placement: 'right',
+     content: 'hello world'
+  });
+ $( "#hide" ).on( "click", function() {
+  $("#hide").css('display', 'none');
+});
+  
+
+  $('#tooltip').tooltip(
+  {
+     trigger: 'hover',
+     html: true,
+     placement: 'bottom',
+     content: 'hello world'
+  });
+
+});
+</script>
+<style type="text/css">
+	.row {
+		margin-left: auto;
+	}
+	.panel-group .panel {
+margin-bottom: 0;
+overflow: hidden;
+border-color: white;
+border-radius: 0px;
+}
+ul ul, ol ul, ul ol, ol ol {
+margin-bottom: 0;
+list-style-type:none;
+}
+.navbar-nav > li > .dropdown-menu {
+width: 200px;
+margin-top: 0;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+}
+.panel-body {
+padding: 0px;
+padding-left: 0px;
+}
+.panel-group {
+margin-bottom: 0px;
+}
+	.jumbotron {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding: 0px;
+padding-left: 10px;
+margin-bottom: 0px;
+color: inherit;
+background-color: #eee;
+	}
+	.carousel{
+		width: 288px;
+	}
+  .navbar-default .navbar-nav > li > a {
+color: #000000;
+}
+  hr {
+margin-top: 20px;
+margin-bottom: 20px;
+border: 0;
+border-top: 1px solid #727272;
+}
+.navbar-default .navbar-brand {
+color: #000000;
+}
+	.col-sm-offset-2 {
+margin-left: 16.666666666666664%;
+padding-top: 20px;
+}
+.panel-title > a {
+display: block;
+padding: 3px 20px;
+clear: both;
+font-weight: normal;
+line-height: 1.428571429;
+color: #333;
+white-space: nowrap;
+}
+</style>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span id="title">Cars R Us</span></a>
+       <script>
+      // var JSONObject= {
+      //   "name":"Zachary Pierce",
+      //   "size":"48px"
+      // };
+      // document.getElementById("title").style.fontSize=JSONObject.size;
+      // document.getElementById("title").innerHTML=JSONObject.name;
+
+       </script>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">Home</a></li>
+        <li><a href="#" >Parts</a></li>
+        <li><a class="Active" href="#" >Search</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="col-md-offset-1 col-md-8">
+<h3>Results for "TRD "</h3>
+<table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Image</th>
+          <th>Part</th>
+          <th>Descriptions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr href="http://127.0.0.1:5000/view/221">
+          <td>1</td>
+          <td><img src="http://www.purefjcruiser.com/images/trd-exhaust-ptr31-35070-lg.jpg" height="45" width="67"></td>
+          <td>TRD Exhuast</td>
+          <td>Toyota Tacoma Performance Exhaust</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>image not found</td>
+          <td>Supercharger</td>
+          <td>TRD Supercharger for Tacoma Tacoma</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>image not found</td>
+          <td>Brushgaurd</td>
+          <td>TRD Brushgaurd for Toyota Tacoma</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+</div>

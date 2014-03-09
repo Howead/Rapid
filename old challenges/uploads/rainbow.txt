@@ -1,0 +1,2 @@
+string,hash
+test,0xFFFFFF
